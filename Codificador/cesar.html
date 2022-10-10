@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css/cesar.css"></link>
+</head>
+    <title>Cifra de César</title>
+<body>    
+    <main id="pagina">
+        <div class="cont">        
+            <div class="tag">                   
+            </div>
+            <form><br>
+                 <!-- Aqui fica o texto para ser digitado-->
+                <textarea name="texto" id="texto" cols="50" rows="3" placeholder="Digite aqui seu texto!"></textarea>
+               
+                <!--Aqui fica a Caixa de selecionar para escolher a cifra-->
+                <select name="select" id="select" class="select" onclick="selecao()">                    
+                    <option id="cifra" value="cifra">Cifra de César</option>
+                </select>
+
+                 <!-- Lógica da chave para a cifra de César-->
+                <br><br><div class="chave-cont" id="chaveCont">               
+                    <label class="chave" for="range">Escolha uma chave:</label>
+                    <div class="deslize">
+                        <input type="range" value="1" min="1" max="26" class="range" id="range"
+                            oninput="rangenumber.value=value" />
+                        <input type="number" value="1" id="rangenumber" min="1" max="26" oninput="range.value=value" />
+                    </div>
+                    <br>
+                </div>   
+
+                <!--Botões de codificar e decodificar a mensagem-->
+                <div class="radiobtn">                  
+                    <div>
+                        <input type="radio" id="codificar" name="selecione" value="codificar" checked/>
+                        <label for="codificar">Codificar</label>
+                    </div>
+                    
+                    <div>
+                        <input type="radio" id="decodificar" name="selecione" value="decodificar" />
+                        <label for="decodificar">Decodificar</label>
+                    </div>
+                </div>
+                <br>
+     
+                <!--Caixa que mostra o resultado-->
+                <textarea id="resultado" cols="50" rows="3" placeholder="Resultado"></textarea>
+                <br>
+                <br>    
+           
+                <!--Botão para obter o resultado-->
+                <div class="btn">                    
+                    <button id="resultbtn">Codificar Mensagem!</button>
+                </div>            
+            </form>  
+            <script src="script.js/cesar.js"></script>  
+            <div id="voltar" class="voltar"><a href='index.html'> Voltar </a> </div>
+        </main>
+</body>
+</html>

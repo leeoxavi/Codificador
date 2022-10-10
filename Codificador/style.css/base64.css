@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif; 
+  color: black;
+  user-select: none;
+}
+  
+body {
+  background-image: url();
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: azure;   
+}
+
+#pagina{
+   margin-top: 100px; 
+  margin-left: 40%; 
+  border-radius: 4%;
+  border: 10px solid rgb(23, 24, 24);
+  height: 300px;
+  width: 300px;
+  text-align: center;
+  font-size: 25px;
+  background-color: azure;
+  box-shadow: black 10px 10px 20px ;
+  opacity:0.9;
+  transition: all 0.5s;
+}
+
+
+p{
+    color: azure;
+    text-align: center;
+}
+
+#voltar{
+  text-decoration: none;
+  margin-top: 45px;
+  margin-left: 200px;
+  font-size: 15px;
+}
+
+#encode{
+  background-color:azure; 
+  color: black;
+  cursor: pointer;
+  padding: 5px 15px ;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+  margin-top: 15px;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  user-select: none;
+}
+#encode:hover {
+    background-color: black; 
+    color: white;
+    font-size: 15px;
+}
+
+#decode{
+  background-color:azure; 
+  color: black;
+  cursor: pointer;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 5px;
+  -webkit-transition-duration: 0.4s; 
+  transition-duration: 0.4s;
+  user-select: none;
+}
+#decode:hover {
+    background-color: black; 
+    color: white;
+    font-size: 15px;
+}
